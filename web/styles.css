@@ -1,0 +1,135 @@
+/** reset first miliseconds vzhledu **/
+img{height:inherit}
+
+cats span{position:absolute; top:30%; left:30%}
+
+/** lazy loading vzhled **/
+/* basic */
+body,html{
+  height:100%;
+}
+
+body{
+  margin:0;
+  font-family:Nunito, Helvetica, Arial, sans-serif;
+}
+
+a{
+  text-decoration:none;
+  color:#00A0D1;/*heureka-modrá*/
+  font-weight:bold;
+}
+a:hover{
+  color:#F26E01;/*heureka-oranžová*/
+}
+
+/* header */
+#header{
+  position:relative;
+  text-align:center;
+  height:9%;
+  min-height:50px;
+  max-height:150px;
+  background:whitesmoke
+}
+
+#header #center{
+  margin:auto;
+  height:100%;
+  width:70%;
+}
+
+#header #logo{
+  float:left;
+  height:100%;
+}
+
+#header #search{
+  border:0;
+  float:left;
+  height:65%;
+  background:white;
+  padding:0 1em;
+  margin-top:1%;
+  width:35%;
+  margin-left:6%;
+}
+
+#header #icons{
+  float:left;
+  margin-left:8%;
+  height:100%;
+  width:20%
+}
+
+#header #icons .icon{
+  float:left;
+  margin-left:15%;
+  height:80%;
+  margin-top:.5em;
+}
+
+/* cat_items */
+#cat_items{
+  float:left;
+  height:100%;
+  width:30%;
+}
+
+.cat_items_list{
+  float:right;
+  width:50%;
+}
+
+.cat_item{
+  list-style-type:none;
+  float:left;
+  margin:.5em 0;
+}
+
+.cat_item .cat_desc{
+  float:left;
+  text-align:left;
+}
+
+.cat_item .cat_image{
+  float:left;
+  margin:.5em;
+  width:2em;
+}
+
+/* cat_modules */
+#cat_modules{
+  float:left;
+  text-align:left;
+  height:100%;
+  width:70%;
+  /*background:lavender;/*dočasně*/
+}
+
+.cat_module_row{
+  text-align:left;
+}
+
+.cat_module{
+  float:left;
+  text-align:center;
+  margin:2em;
+}
+
+.cat_module .cat_image{
+  width:8em;
+}
+
+/* responzivita, todo */
+@media(max-width:948px){
+  .cat_items_list{
+    width:100%;
+  }
+}
+
+@media(max-width:840px){
+  #header #center{
+    width:100%;
+  }
+}
