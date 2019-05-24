@@ -1,5 +1,5 @@
 Heureka
-#######
+=======
 
 To see it live: http://www.dvorapa.cz/heureka/
 
