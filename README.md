@@ -1,7 +1,8 @@
-Heureka
-=======
+# Heureka
 
-To see it live: http://www.dvorapa.cz/heureka/
+Test project recreating Heureka.cz
+
+## Usage
 
 To test or build:
 - Install Dart
@@ -12,3 +13,11 @@ To test or build:
 To test: `webdev serve` (or `webdev serve --release` on incompatible browsers)
 
 To build: `webdev build --output web:build`
+
+## Status
+
+`abandoned`
+
+## Author
+
+[Pavel Dvořák](https://github.com/dvorapa) ([@dvorapa](https://twitter.com/dvorapa))

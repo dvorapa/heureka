@@ -3,7 +3,7 @@ import 'dart:convert' as JSON;
 import 'dart:html';
 
 /// Gets anything from API. (so called The Big Getter)
-/// 
+///
 /// @param query: query to be loaded from API
 /// @type query: String
 class Getter {
@@ -14,11 +14,12 @@ class Getter {
   Getter(this.query);
 
   // get raw json
-  Future<dynamic> get_json () async {
+  Future<dynamic> get_json() async {
     // async completer
     Completer c = Completer();
     // API url
-    String url = 'http://python-servers-vtnovk529892.codeanyapp.com:5000/$query';
+    String url =
+        'http://python-servers-vtnovk529892.codeanyapp.com:5000/$query';
     // request raw result
     String raw = await HttpRequest.getString(url);
     // jsonify
@@ -38,7 +39,7 @@ class Cats {
   List<Cat> cats = [];
 
   // compile new list of cats
-  Future<dynamic> get_cats () async {
+  Future<dynamic> get_cats() async {
     // async completer
     Completer c = Completer();
     // instantiate request
@@ -46,7 +47,7 @@ class Cats {
     // request json
     List json = await request.get_json();
     // fill list
-    json.forEach((map){
+    json.forEach((map) {
       cats.add(Cat(map['categoryId'], map['title']));
     });
     // async return
@@ -56,7 +57,7 @@ class Cats {
 }
 
 /// Category class.
-/// 
+///
 /// @param id: id of category
 /// @type id: int
 /// @param title: title of category
